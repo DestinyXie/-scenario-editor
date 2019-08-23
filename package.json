@@ -10,6 +10,9 @@
   "dependencies": {
     "@packy-tang/vue-tinymce": "^0.2.1",
     "core-js": "^2.6.5",
+    "element-ui": "^2.11.1",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -30,7 +33,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

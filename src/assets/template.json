@@ -1,0 +1,79 @@
+[
+    {
+      "num": 1,
+      "no":"",
+      "atmosphere": "日", 
+      "terior": "内", 
+      "files": [],
+      "project_id": "5d492f7fb49199005ed85ca0",
+      "episode_id": "5d492f7fb49199005ed85ca1",
+      "location": "5d5124295ee823005ed275ee",
+      "locationDisplayName": { 
+        "main": "杨福林卧室",
+        "sub": "aa"
+      },
+      "blocks": [ 
+        {
+          "type": "1", 
+          "content": "童话<role id=5d492f7fb4swd9005ed85ca1>般华丽的城堡</role>中，推开层层厚重的木门，房间的最深处，放着一顶美丽的水晶棺，棺材里正沉睡着一位帅气的王子（萧亮）。\n他身着中世纪王子外套、一排金色的扣子镶在笔直的礼服上，奢华无比，俊俏的脸近似", 
+          "spokesman": "",
+          "rows": 10,
+          "words": 0
+        }
+      ],
+      "rolesInfo": [{
+        "_id": "5d493611b49199005ed85cb6",
+        "number": "2",
+        "alias": [],
+        "actors": [],
+        "avatar": "https://vcs.vsochina.com/files/v1/image/agileshot/script/boy.png",
+        "sex": 1,
+        "age": "",
+        "minor": false,
+        "occupation": "",
+        "img": [],
+        "description": "",
+        "project_id": "5d492f7fb49199005ed85ca0",
+        "name": "公主",
+        "created_at": "2019-08-06T08:10:57.575Z",
+        "updated_at": "2019-08-08T07:10:33.698Z"
+      }],
+      "created_at": "2019-08-06T08:10:58.259Z",
+      "updated_at": "2019-08-12T08:32:41.116Z"
+    },
+    {
+      "num": 2,
+      "no":"",
+      "atmosphere": "", 
+      "terior": "", 
+      "files": [],
+      "project_id": "5d492f7fb49199005ed85ca0",
+      "episode_id": "5d492f7fb49199005ed85ca1",
+      "location": "5d5124295ee823005ed275ee",
+      "locationDisplayName": { 
+        "main": "场景2",
+        "sub": ""
+      },
+      "blocks": [
+      ],
+      "rolesInfo": [{
+        "_id": "5d493611b49199005ed85cb6",
+        "number": "2",
+        "alias": [],
+        "actors": [],
+        "avatar": "https://vcs.vsochina.com/files/v1/image/agileshot/script/boy.png",
+        "sex": 1,
+        "age": "",
+        "minor": false,
+        "occupation": "",
+        "img": [],
+        "description": "",
+        "project_id": "5d492f7fb49199005ed85ca0",
+        "name": "公主",
+        "created_at": "2019-08-06T08:10:57.575Z",
+        "updated_at": "2019-08-08T07:10:33.698Z"
+      }],
+      "created_at": "2019-08-06T08:10:58.259Z",
+      "updated_at": "2019-08-12T08:32:41.116Z"
+    }
+]

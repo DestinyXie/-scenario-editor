@@ -1,16 +1,18 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <vue-tinymce
-        ref="tinymce"
-        v-model="content"
-        :setting="setting">
-    </vue-tinymce>
+    <div class="editor-cont">
+      <scenario-editor
+        :scenes="scenes"
+        @scenesSave="onScenesSave"
+      ></scenario-editor>
+    </div>
   </div>
 </template>
 
 <script>
-import { TinymceSetting } from '@packy-tang/vue-tinymce';
+import ScenarioEditor from "@/components/ScenarioEditor";
+import tempData from '../assets/template'
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -18,24 +20,27 @@ export default {
   },
   data () {
       return {
-        content: '<p>html content</p>',
-        setting: {
-            ...TinymceSetting,
-            height: 200,
-            language_url: "langs/zh_CN.js",
-            block_formats: "Paragraph=p;Heading 1=h1;Heading 2=h2;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;"
-        }
+        scenes: tempData
       }
   },
   mounted () {
-    const bm = this.$refs.tinymce.editor.selection.getBookmark();
-    console.log(bm);
+    // console.log(bm, data);
+  },
+  methods: {
+    // 保存场景数据
+    onScenesSave(scenes) {
+      console.log('components scenes: ', scenes);
+      alert('新数据：' + JSON.stringify(scenes));
+    }
+  },
+  components: {
+    "scenario-editor": ScenarioEditor
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="less">
 h3 {
   margin: 40px 0 0;
 }
@@ -49,5 +54,16 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.editor-cont {
+  width: 1000px;
+  margin: 0 auto;
+  height: auto;
+  max-height: 800px;
+  min-height: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+
 }
 </style>
